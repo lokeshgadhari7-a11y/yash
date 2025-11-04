@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Farm to Home Delivery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f9f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+    main {
+      max-width: 650px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #2e8b57;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    label {
+      font-weight: bold;
+      color: #333;
+    }
+    input, select {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #256d45;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #2e8b57;
+      color: white;
+    }
+    footer {
+      text-align: center;
+      color: #555;
+      margin-top: 25px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Local Farm to Home Delivery</h1>
+    <p>Fresh Produce Directly from Farmers to Your Doorstep</p>
+  </header>
+
+  <main>
+    <h2>Order Fresh Farm Products</h2>
+
+    <form>
+      <label for="customerName">Customer Name:</label>
+      <input type="text" id="customerName" placeholder="Enter your name" required>
+
+      <label for="address">Delivery Address:</label>
+      <input type="text" id="address" placeholder="Enter your address" required>
+
+      <label for="product">Select Product:</label>
+      <select id="product">
+        <option>Fresh Vegetables</option>
+        <option>Organic Fruits</option>
+        <option>Dairy Products</option>
+        <option>Grains & Pulses</option>
+        <option>Honey & Jaggery</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="text" id="quantity" placeholder="e.g. 2 Kg / 1 Litre">
+
+      <label for="date">Preferred Delivery Date:</label>
+      <input type="date" id="date">
+
+      <button type="submit">Place Order</button>
+    </form>
+
+    <h2>Today's Available Products</h2>
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Category</th>
+        <th>Price (₹)</th>
+        <th>Farmer</th>
+      </tr>
+      <tr>
+        <td>Tomatoes</td>
+        <td>Vegetables</td>
+        <td>40 / Kg</td>
+        <td>Farmer Ravi</td>
+      </tr>
+      <tr>
+        <td>Bananas</td>
+        <td>Fruits</td>
+        <td>60 / Dozen</td>
+        <td>Farmer Sita</td>
+      </tr>
+      <tr>
+        <td>Fresh Milk</td>
+        <td>Dairy</td>
+        <td>50 / Litre</td>
+        <td>Farmer Ramesh</td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    © 2025 FarmFresh Connect — Supporting Local Farmers 🌾
+  </footer>
+
+</body>
+</html>
